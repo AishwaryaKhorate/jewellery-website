@@ -5,12 +5,27 @@ function Home({ onNavigate }) {
 
   // Add your featured image paths here
   const slides = [
-    { url: "/rings/r9.png", label: "Premium Rings" },
-    { url: "/necklace/n9.png", label: "Elegant Necklaces" },
-    { url: "/bangles/ba1.png", label: "Luxury Bangles" },
-    { url: "/earrings/e2.png", label: "Sparkling Earrings" },
-    { url: "/Bracelets/b8.png", label: "Classic Bracelets" },
-  ];
+  {
+    url: `${import.meta.env.BASE_URL}rings/r9.png`,
+    label: "Premium Rings",
+  },
+  {
+    url: `${import.meta.env.BASE_URL}necklace/n9.png`,
+    label: "Elegant Necklaces",
+  },
+  {
+    url: `${import.meta.env.BASE_URL}bangles/ba1.png`,
+    label: "Luxury Bangles",
+  },
+  {
+    url: `${import.meta.env.BASE_URL}earrings/e2.png`,
+    label: "Sparkling Earrings",
+  },
+  {
+    url: `${import.meta.env.BASE_URL}Bracelets/b8.png`,
+    label: "Classic Bracelets",
+  },
+];
 
   useEffect(() => {
     const timer = setInterval(() => {
